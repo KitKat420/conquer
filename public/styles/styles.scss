@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./header";
+@import "./showcase";
 
 * {
   margin: 0;
@@ -9,4 +10,19 @@
 
 body {
   font-family: "Lato";
+}
+
+// TEMPORARY MEDIA QUERIES
+
+@media (min-width: 1920px) {
+  .container {
+    width: 70%;
+    margin: 60px auto;
+  }
+}
+@media (min-width: 2560px) {
+  .container {
+    width: 55%;
+    margin: 60px auto;
+  }
 }
