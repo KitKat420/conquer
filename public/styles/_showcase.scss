@@ -38,8 +38,8 @@
 .showcase__card-2,
 .showcase__card-3 {
   background-color: $primary-backgroundColor;
-  height: 31.25rem;
-  width: 25rem;
+  //   height: 31.25rem;
+  //   width: 25rem;
   border-radius: 1rem;
   box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.2);
 }
@@ -52,6 +52,7 @@
 }
 
 .showcase__card-1 {
+  grid-area: card-1;
   @include card-content;
   .showcase__card--text {
     h3 {
@@ -65,6 +66,7 @@
 }
 
 .showcase__card-2 {
+  grid-area: card-2;
   @include card-content;
   .showcase__card--text {
     h3 {
@@ -78,6 +80,7 @@
 }
 
 .showcase__card-3 {
+  grid-area: card-3;
   @include card-content;
   .showcase__card--text {
     h3 {
@@ -92,5 +95,19 @@
 
 .showcase__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-areas:
+    ". card-1 card-1 card-2 card-2 card-3 card-3 ."
+    ". card-4 card-4 card-4 card-5 card-5 card-5 .";
+}
+
+.showcase__card-4 {
+  grid-area: card-4;
+}
+
+.showcase__card-5 {
+  grid-area: card-5;
 }
