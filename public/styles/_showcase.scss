@@ -11,6 +11,40 @@
   }
 }
 
+@mixin columnStyle {
+  color: $bootstrap-grey;
+  padding: 20px;
+  h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+@mixin infoBtn($top_bottom, $left_right) {
+  .information-btn {
+    color: $bootstrap-grey;
+    font-weight: 300;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid $bootstrap-grey;
+    text-decoration: none;
+    padding: $top_bottom $left_right;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 20rem;
+    &:hover {
+      transition: 0.3s;
+      background-color: darken(#fff, 5%);
+    }
+  }
+}
+
 @mixin showcaseBtnStyle($bgColor) {
   display: inline-block;
   background-color: $bgColor;
@@ -110,4 +144,17 @@
 
 .showcase__card-5 {
   grid-area: card-5;
+  @include infoBtn(8px, 20px);
+}
+
+.showcase__card-4,
+.showcase__card-5 {
+  background-color: $primary-backgroundColor;
+  img {
+    width: 100%;
+  }
+}
+
+.showcase__column--text {
+  @include columnStyle();
 }

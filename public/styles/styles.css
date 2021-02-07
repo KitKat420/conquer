@@ -262,6 +262,88 @@
   grid-area: card-5;
 }
 
+.showcase__card-5 .information-btn {
+  color: #6c757d;
+  font-weight: 300;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid #6c757d;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-left: 20rem;
+}
+
+.showcase__card-5 .information-btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #f2f2f2;
+}
+
+.showcase__card-4,
+.showcase__card-5 {
+  background-color: #f1ecec;
+}
+
+.showcase__card-4 img,
+.showcase__card-5 img {
+  width: 100%;
+}
+
+.showcase__column--text {
+  color: #6c757d;
+  padding: 20px;
+}
+
+.showcase__column--text h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.showcase__column--text p {
+  margin-bottom: 20px;
+}
+
+.services__intro {
+  width: 100%;
+  height: 15rem;
+  background-image: url("../images/services-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services__intro .services__intro--text {
+  text-align: center;
+  color: #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services__intro .services__intro--text h2 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.services__intro .services__intro--text p {
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -275,14 +357,14 @@ body {
 
 @media (min-width: 1920px) {
   .container {
-    width: 70%;
+    width: 80%;
     margin: 60px auto;
   }
 }
 
 @media (min-width: 2560px) {
   .container {
-    width: 55%;
+    width: 58%;
     margin: 60px auto;
   }
 }
